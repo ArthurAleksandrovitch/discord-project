@@ -1,164 +1,127 @@
+﻿```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord — Главная</title>
+  <meta name="theme-color" content="#08091e">
+  <meta name="description" content="Discord — место для общения, игр и сообществ.">
+  <title>Jadecord — общайся по-своему</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="#">
-      <span class="discord-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.54 5.17A16.9 16.9 0 0 0 15.38 4l-.5 1.03a15.3 15.3 0 0 0-5.76 0L8.62 4a16.9 16.9 0 0 0-4.16 1.17C1.82 9.23 1.1 13.18 1.46 17.08A16.9 16.9 0 0 0 6.56 19.7l1.23-1.68c-.68-.25-1.33-.57-1.94-.95l.47-.36c3.74 1.75 8.56 1.75 12.25 0l.48.36c-.61.38-1.26.7-1.95.95l1.23 1.68a16.9 16.9 0 0 0 5.1-2.62c.43-4.53-.73-8.44-3.89-11.91ZM8.31 14.8c-1.12 0-2.05-1.03-2.05-2.3s.9-2.3 2.05-2.3 2.06 1.03 2.05 2.3c0 1.27-.9 2.3-2.05 2.3Zm7.38 0c-1.12 0-2.05-1.03-2.05-2.3s.9-2.3 2.05-2.3 2.05 1.03 2.05 2.3-.9 2.3-2.05 2.3Z"/>
-        </svg>
-      </span>
-      <span>Discord</span>
+    <a class="brand" href="#home" aria-label="Discord — главная">
+      <img class="jadecord-logo" src="assets/jadecord-logo.png" alt="Jadecord">
+      <span>Jadecord</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Основная навигация">
       <a href="#features">Возможности</a>
-      <a href="#about">О проекте</a>
-      <a href="#faq">FAQ</a>
+      <a href="#about">Сообщества</a>
+      <a href="#faq">Вопросы</a>
     </nav>
 
-    <a class="login-btn" href="#login">Войти</a>
+    <a class="login-btn" href="https://Jadecord.com/login" target="_blank" rel="noopener noreferrer">Войти</a>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-content">
         <div class="hero-copy">
-          <span class="eyebrow">ТВОЁ МЕСТО ДЛЯ ОБЩЕНИЯ</span>
-          <h1>Общайтесь.<br><span>Создавайте.</span><br>Будьте вместе.</h1>
-          <p>
-            Удобное место для общения с друзьями и создания собственных
-            сообществ. Всё необходимое — в одном пространстве.
-          </p>
-
+          <span class="eyebrow">МЕСТО ДЛЯ ТВОИХ ЛЮДЕЙ</span>
+          <h1>Общайтесь<br>по-своему<span>.</span></h1>
+          <p>Общайся с друзьями, играй, создавай сообщества и делись тем, что тебе интересно. Всё, что важно для тебя, — в одном месте.</p>
           <div class="hero-actions">
-            <a class="primary-btn" href="#join">Начать пользоваться</a>
-            <a class="secondary-btn" href="#features">Узнать больше <span>↓</span></a>
+            <a class="primary-btn" href="https://Jadecord.com/download" target="_blank" rel="noopener noreferrer">↓ Скачать Jadecord</a>
+            <a class="secondary-btn" href="https://Jadecord.com" target="_blank" rel="noopener noreferrer">Открыть в браузере <span>↗</span></a>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="glow glow-one"></div>
           <div class="glow glow-two"></div>
-          <img src="assets/hero-reference.png" alt="Интерфейс Discord" />
+          <picture>
+            <source srcset="assets/hero-mobile.webp" type="image/webp">
+            <img class="hero-image" src="assets/hero-reference.png" alt="Иллюстрация Jadecord и общения в сообществах">
+          </picture>
         </div>
       </div>
     </section>
 
-    <section class="features section" id="features">
+    <section class="section" id="features">
       <div class="section-heading">
-        <span class="eyebrow">ВОЗМОЖНОСТИ</span>
-        <h2>Всё необходимое<br>для общения</h2>
-        <p>Пространство, где удобно общаться, играть и создавать сообщества.</p>
+        <span class="eyebrow">БОЛЬШЕ, ЧЕМ ПРОСТО ЧАТ</span>
+        <h2>Всё начинается с общения</h2>
+        <p>Создавай пространство для друзей, находи единомышленников и делись моментами в удобном формате.</p>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3>Общение</h3>
-          <p>Текстовые каналы для разговоров, обсуждений и обмена сообщениями.</p>
+          <div class="feature-icon" aria-hidden="true">💬</div>
+          <h3>Общайся свободно</h3>
+          <p>Переписывайся в текстовых каналах и оставайся на связи с друзьями в личных сообщениях.</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">🎙️</div>
-          <h3>Голосовые комнаты</h3>
-          <p>Общайтесь голосом с друзьями и участниками своего сообщества.</p>
+          <div class="feature-icon" aria-hidden="true">🎧</div>
+          <h3>Будь рядом</h3>
+          <p>Заходи в голосовые каналы, разговаривай и проводи время вместе — даже на расстоянии.</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">👥</div>
-          <h3>Сообщества</h3>
-          <p>Создавайте собственные серверы и настраивайте их под себя.</p>
+          <div class="feature-icon" aria-hidden="true">🎮</div>
+          <h3>Играй вместе</h3>
+          <p>Собирай команду, обсуждай игры и делись впечатлениями во время совместных сессий.</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">🤖</div>
-          <h3>Боты</h3>
-          <p>Добавляйте автоматизацию, музыку, модерацию и другие функции.</p>
+          <div class="feature-icon" aria-hidden="true">🖥️</div>
+          <h3>Делись экраном</h3>
+          <p>Показывай друзьям игру, фильм, проект или то, над чем работаешь прямо сейчас.</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">📁</div>
-          <h3>Файлы</h3>
-          <p>Отправляйте изображения, документы и другие материалы прямо в чат.</p>
+          <div class="feature-icon" aria-hidden="true">🌐</div>
+          <h3>Находи своё</h3>
+          <p>Присоединяйся к сообществам по интересам — от творчества и технологий до игр.</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">🔔</div>
-          <h3>Уведомления</h3>
-          <p>Оставайтесь в курсе новых сообщений и важных событий сообщества.</p>
+          <div class="feature-icon" aria-hidden="true">✨</div>
+          <h3>Создавай пространство</h3>
+          <p>Настраивай серверы и каналы так, чтобы они подходили именно твоей компании.</p>
         </article>
       </div>
     </section>
 
-    <section class="about section" id="about">
+    <section class="section about" id="about">
       <div class="about-card">
         <div>
-          <span class="eyebrow">О ПРОЕКТЕ</span>
-          <h2>Одно пространство.<br>Много возможностей.</h2>
-          <p>
-            Этот сайт — главная страница нашего Discord-проекта.
-            Здесь пользователь сможет узнать о возможностях сервера,
-            войти в аккаунт и перейти непосредственно к общению.
-          </p>
-          <a class="primary-btn" href="#join">Присоединиться</a>
+          <span class="eyebrow">ТВОЁ СООБЩЕСТВО</span>
+          <h2>Место, где свои</h2>
+          <p>Jadecord помогает людям собираться вокруг общих интересов. Создай сервер для друзей или найди сообщество, в котором тебе будет комфортно.</p>
+          <a class="primary-btn" href="https://Jadecord.com" target="_blank" rel="noopener noreferrer">Попробовать Jadecord ↗</a>
         </div>
-        <div class="about-orb">
-          <span>DISCORD</span>
-        </div>
+        <div class="about-orb" aria-label="Jadecord">LET'S<br>HANG OUT</div>
       </div>
     </section>
 
-    <section class="cta section" id="join">
+    <section class="section cta">
       <div class="cta-inner">
-        <span class="eyebrow">ГОТОВЫ НАЧАТЬ?</span>
-        <h2>Присоединяйтесь<br>к общению</h2>
-        <p>Создайте аккаунт и начните общаться с друзьями уже сейчас.</p>
-        <a class="primary-btn" href="#login">Войти через браузер</a>
+        <span class="eyebrow">ТВОЯ КОМПАНИЯ УЖЕ ЗДЕСЬ</span>
+        <h2>Готов присоединиться?</h2>
+        <p>Скачай Jadecord или открой его в браузере и продолжай общаться там, где тебе удобно.</p>
+        <a class="primary-btn" href="https://Jadecord.com/download" target="_blank" rel="noopener noreferrer">Начать общение ↗</a>
       </div>
     </section>
 
-    <section class="faq section" id="faq">
+    <section class="section" id="faq">
       <div class="section-heading">
-        <span class="eyebrow">FAQ</span>
-        <h2>Частые вопросы</h2>
+        <span class="eyebrow">ЕСТЬ ВОПРОСЫ?</span>
+        <h2>Коротко о главном</h2>
       </div>
 
       <div class="faq-list">
         <details>
-          <summary>Что это за проект?</summary>
-          <p>Это учебный Discord-проект с собственной главной страницей и интерфейсом.</p>
+          <summary>Что такое Jadecord?</summary>
+          <p>Jadecord — платформа для текстового, голосового и видеообщения, а также для создания сообществ.</p>
         </details>
         <details>
-          <summary>Можно ли создать свой сервер?</summary>
-          <p>Да. В дальнейшем эту возможность можно подключить к серверной части проекта.</p>
-        </details>
-        <details>
-          <summary>Будет ли здесь авторизация?</summary>
-          <p>Да, кнопку входа можно связать с системой регистрации и авторизации.</p>
-        </details>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="brand footer-brand">
-      <span class="discord-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.54 5.17A16.9 16.9 0 0 0 15.38 4l-.5 1.03a15.3 15.3 0 0 0-5.76 0L8.62 4a16.9 16.9 0 0 0-4.16 1.17C1.82 9.23 1.1 13.18 1.46 17.08A16.9 16.9 0 0 0 6.56 19.7l1.23-1.68c-.68-.25-1.33-.57-1.94-.95l.47-.36c3.74 1.75 8.56 1.75 12.25 0l.48.36c-.61.38-1.26.7-1.95.95l1.23 1.68a16.9 16.9 0 0 0 5.1-2.62c.43-4.53-.73-8.44-3.89-11.91ZM8.31 14.8c-1.12 0-2.05-1.03-2.05-2.3s.9-2.3 2.05-2.3 2.06 1.03 2.05 2.3c0 1.27-.9 2.3-2.05 2.3Zm7.38 0c-1.12 0-2.05-1.03-2.05-2.3s.9-2.3 2.05-2.3 2.05 1.03 2.05 2.3-.9 2.3-2.05 2.3Z"/>
-        </svg>
-      </span>
-      <span>Discord Project</span>
-    </div>
-    <div class="footer-links">
-      <a href="#features">Возможности</a>
-      <a href="#about">О проекте</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <span class="copyright">© 2026 Discord Project</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+          <summary>Можно ли пользоваться Jadecord бесплатно?</summary>
+          <p>Основные возможности Jadecord
