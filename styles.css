@@ -508,3 +508,21 @@ details p {
   object-fit: contain;
   flex-shrink: 0;
 }
+
+/* Jadecord: compact logo */
+.header .jadecord-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Main Jadecord illustration */
+.hero-visual .hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
